@@ -6,35 +6,80 @@
     <link href="index.css" type="text/css" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-    <link href="./png/BMini2.png" rel="icon" type="image/png" >
-    <title>Groot Translate</title>
+    <link href="./src/encryption.png" rel="icon" type="image/png" >
+    <title>Morse Code Translator</title>
 </head>
 <body>
-    <nav class="nav">
-        <!-- <img src="./png/BMini3.png" class="header-img"  alt="minion1"/> -->
-       <div class="nav-div">
-           
-            Groot-Talk
-        </div>
+    <nav class="nav">        
+       <span class="nav-div float">          
+        Morse Code Translator
+       </span>
+
+       <ul class="nav-div">
+        <li class="menu-li"><a href="#Morse_code">Morse-Codes</a></li>
+        <li class="menu-li"><a href="#translate">Translate</a></li>
+        <li class="menu-li"><a href="#about-it">About-it</a>  </li>
+
+    </ul>
+       <!-- <span class="nav-div">
+            <span class="menu-li">          
+                <a href="#home" >Home</a>
+            </span>
+            
+            <span class="menu-li" >          
+                <a href="#Morse_code">Morse-Codes</a>
+            </span>
+            <span class="menu-li" >          
+                <a href="#translate">Translate</a>
+            </span>           
+            <span class="menu-li" >          
+              <a href="#about-it">About-it</a>  
+            </span>
+    </span> -->
+
         
     </nav>
+<section class="home" id="home">
+    <h2 class="home_heading">What is Morse ?</h2>
 
-    <div class="main">
-   
-            <textarea id="txt-area" cols="1" placeholder="write here something..."></textarea>
+        <p class="home_text">
+            Samuel Morse developed the foundation for Morse code in the 1800s when he worked with an electrical telegraph system sending pulses of electric current and an electromagnet. His code used the pulse and breaks between them to transmit information.  Popular with amateur radio operators, this code is no longer required if you want to get a U.S. pilots or air traffic controller license, though these individuals often have a basic understanding of the code. 
+        </p>
+        <p class="home_text">
+            While this code covers the basic Latin alphabet and Arabic numerals, extensions to the code cover languages that use more than the Latin alphabet letters.
+        </p>
+        <p class="home_text">
+            An observer can understand Morse code without special equipment which can be an advantage in, for example, an emergency situation.  This code can also be useful when poor signal conditions exist, and the human voice is difficult to decode. 
+        </p>
+        <p class="home_text">
+            Just type letters, numbers and punctuation into the box and the Morse code will appear in the bottom box . This is not a great tool for learning Morse code as looking at the dots and dashes does not help. Instead, try the <a href="https://morsecode.world/international/trainer/trainer.html" class="link"> CWOps Morse Trainer.</a>
+        </p>
 
-                <div class="btn-div">
-                    <button id="btn-click">  Translate To Banana </button>
-                    <h4>Output Will Show Here 👇: </h4>
-                </div>  
+        
+    <section class="conversion">
+        <div class="img_sec" id="Morse_code">
+             <img src="src/international_morse_code.png">
+         </div>
+    </section>
 
-           
-            <div id="output"> </div>
-        </div>
+    </section>
+    <section class="main" >
+        <div id="translate">
+                 <textarea id="txt-area"  cols="1" placeholder="write here something..."></textarea>
+                     <div class="btn-div">
+                         <button id="btn-click">  Translate To Morse_Code </button>
+                         <h4>Translated Output Will Show Here 👇: </h4>
+                     </div> 
+                 <div id="output"></div>
+         </div>
+    </section>
 
-<footer class="footer-div">
-    <div class="footer-heading">about</div>
-    <div class="about-text">Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</div>
+    
+<footer class="footer-div " id="about-it">
+    <div class="footer-heading">About-this-Page</div>
+    <div class="about-text">
+        Convert from English to Morse Code. Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment. The International Morse Code encodes the ISO basic Latin alphabet, some extra Latin letters, the Arabic numerals and a small set of punctuation and procedural signals as standardized sequences of short and long signals called "dots" and "dashes", or "dits" and "dahs".
+    </div>
 </footer>
 
     <script src="app.js" type="text/javascript"></script>
